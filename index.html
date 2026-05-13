@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM System — Secure Banking Terminal</title>
+    <meta name="description" content="ATM system simulation with secure banking operations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="atm-container">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <header class="atm-header">
+        <div class="bank-logo">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M8 16h16M16 10v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="logo-text">
+                <span class="bank-name">SecureBank</span>
+                <span class="bank-tagline">ATM Terminal</span>
+            </div>
+        </div>
+        <div class="session-indicator" id="sessionIndicator" style="display:none;">
+            <div class="session-dot"></div>
+            <span id="sessionTimer">2:00</span>
+        </div>
+    </header>
+    <main class="atm-screen" id="atmScreen"></main>
+    <footer class="atm-footer">
+        <p>SecureBank ATM &copy; 2026 &mdash; All transactions are encrypted and secure.</p>
+    </footer>
+</div>
+<div class="toast-container" id="toastContainer"></div>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/accounts.js"></script>
+<script src="js/transactions.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
